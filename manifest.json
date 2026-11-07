@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"Poker Analyzer — Leitura Local e Estudo (Experimental)","version":"0.2.1","description":"Captura autorizada da aba e leitura local experimental de cartas para revisão posterior.","permissions":["activeTab","tabs","storage"],"action":{"default_popup":"popup.html"}}
