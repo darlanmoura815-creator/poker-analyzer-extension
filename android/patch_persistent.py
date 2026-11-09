@@ -100,6 +100,8 @@ s=change(s,'    @Override public int onStartCommand(Intent intent,int flags,int 
 svc.write_text(s)
 
 s=act.read_text()
+s=change(s,'Intent s=new Intent(this,FloatingService.class);',
+         'Intent s=new Intent(this,FloatingService.class).setAction("br.com.pokerranking.floating.SHOW");')
 s=change(s,'import android.app.Activity;',
            'import android.app.Activity;\nimport android.Manifest;\nimport android.content.pm.PackageManager;')
 s=change(s,'            if(Build.VERSION.SDK_INT>=26)startForegroundService(s);else startService(s);',
